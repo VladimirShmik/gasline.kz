@@ -1,0 +1,128 @@
+/*header-styles*/
+.header-bg{
+  background-image: url('../img/main-header.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 3.6rem;
+}
+.header-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.8fr;
+  align-items: center;
+  padding: 1rem 0 14.5rem;
+  @media(min-width: 20rem) and (max-width: 62rem){
+    padding: 1rem 0 3rem;
+  }
+}
+.header-logo{
+
+}
+.header-menu{
+  display: grid;
+  justify-self: center;
+  grid-auto-flow: column;
+  list-style: none;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  @media(min-width: 20rem) and (max-width: 62rem){
+    display: none;
+  }
+}
+.menu-item{
+
+}
+.menu-link{
+  font-size: 1.125rem;
+  color: #045175;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-contacts{
+  display: grid;
+  grid-template-columns: 1.625rem 1fr;
+  grid-gap: 1rem;
+  justify-self: end;
+  align-items: center;
+  text-decoration: none;
+  @media(min-width: 20rem) and (max-width: 62rem){
+    display: none;
+  }
+  &__icon{
+
+  }
+  &__text{
+ font-size: 1.5rem;
+ font-weight: 400;
+    color: #045175;
+  }
+  &__bold{
+    color: #045175;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+.title-section{
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2.7rem 0 3.2rem;
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: url("../img/header-bg.png");
+    transform: translateX(-50%);
+    left: 50%;
+    pointer-events: none;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+  }
+  &__link{
+    position: relative;
+    z-index: 10;
+  }
+  &__title{
+    position: relative;
+    z-index: 10;
+    font-size: 3rem;
+    font-weight: 500;
+    max-width: 62.5rem;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    @media(min-width: 20rem) and (max-width: 62rem){
+      font-size: 2.5rem;
+    }
+  }
+  &__subtitle{
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.813rem;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+  &__link{
+    width: 100%;
+    max-width: 16.25rem;
+    margin: 0 auto;
+    font-size: 1.625rem;
+    background-color: #c22223;
+    border-radius: 0.5rem;
+    padding: 1.1rem 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
