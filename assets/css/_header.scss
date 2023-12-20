@@ -17,6 +17,26 @@
     padding: 1rem 0 3rem;
   }
 }
+.header--menu{
+  .header-wrapper{
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    padding: 1.5rem 0 1.5rem;
+  }
+}
+.header-menu-bg{
+  background: #045175;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
+  & .header-menu{
+    grid-gap: 2rem;
+    justify-content: start;
+    margin-bottom: 0;}
+  & .header-menu a{
+    color: #ffffff;
+  }
+}
 .header-logo{
 
 }

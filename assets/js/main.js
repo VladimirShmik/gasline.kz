@@ -1,38 +1,16 @@
-//current-year
-const currentYear = new Date().getFullYear();
-const yearElement = document.getElementById('currentYear');
-yearElement.textContent = currentYear;
 
-//mobile-burger
-const burgerIcon = document.querySelector('.burger-icon');
-const menu = document.querySelector('.mobile-menu');
-const menuBackdrop =document.querySelector('.menu-backdrop');
+// Получаем ссылку на элемент gallery
+let gallery = document.querySelector(".gallery");
 
-burgerIcon.addEventListener('click', () => {
-    burgerIcon.classList.toggle('animate');
-    menu.classList.toggle('show-menu');
-    menuBackdrop.classList.toggle('menu-backdrop--show')
-});
-function closeMenuAndReset() {
-    burgerIcon.classList.remove('animate');
-    menu.classList.remove('show-menu');
-    menuBackdrop.classList.remove('menu-backdrop--show');
+// Проверяем, существует ли элемент gallery
+if (gallery) {
+    // Ищем все элементы <br> внутри элемента gallery
+    let brElements = gallery.getElementsByTagName("br");
+
+    // Проходимся по найденным элементам <br> и удаляем их
+    for (let i = 0; i < brElements.length; i++) {
+        let brElement = brElements[i];
+        brElement.parentNode.removeChild(brElement);
+    }
+} else {
 }
-document.addEventListener('click', (event) => {
-    // Проверяем, был ли клик вне элемента .mobile-menu и бургер-иконки
-    if (!menu.contains(event.target) && !burgerIcon.contains(event.target)) {
-        closeMenuAndReset(); // Закрываем меню и снимаем анимацию
-    }
-});
-
-//mobile-submenu
-
-const menuItems = document.querySelectorAll('.header-menu .menu-item');
-
-menuItems.forEach((menuItem) => {
-    const subMenu = menuItem.querySelector('.sub-menu');
-    if (subMenu) {
-        menuItem.classList.add('menu-item--arrow');
-    }
-});
-

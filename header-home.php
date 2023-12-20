@@ -26,34 +26,16 @@
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/logo-header.png" alt="" class="logo-link__img">
                             </a>
                         </div>
-                        <nav class="header-menu">
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">Главная</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">О компании</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">Услуги</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">Каталогов товаров</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">Контакты</a>
-                            </li>
-                        </nav>
-                        <a href="tel: 77780733799" class="header-contacts">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-menu') ); ?>
+                        <a href="tel:77073649575 " class="header-contacts">
                             <img src="<?php echo bloginfo('template_url'); ?>/assets/img/phone-icon.png" alt="" class="header-contacts__icon">
-                            <span class="header-contacts__text">+7 (778) <span
-                                    class="header-contacts__bold">073 37 99</span></span>
+                            <span class="header-contacts__text"> <span
+                                        class="header-contacts__bold"> +7(707)-36-49-575 </span></span>
                         </a>
                     </div>
                     <div class="title-section">
                         <h1 class="title-section__title">Автономная газификация<br> жилых и коммерческих помещений</h1>
-                        <h2 class="title-section__subtitle">Бытовой газ: котлы, арматура, сигнализаторы, композитные
-                            балоны</h2>
-                        <a href="#" class="title-section__link">Подробнее</a>
+                        <h2 class="title-section__subtitle">ГАЗОВЫЕ КОТЛЫ, ГАЗГОЛЬДЕРНАЯ АРМАТУРА, СИГНАЛИЗАТОРЫ, ЗАГАЗОВАННОСТЬ, СТАБИЛИЗАТОРЫ НАПРЯЖЕНИЯ, КОМПОЗИТНЫЕ БАЛЛОНЫ</h2>
                     </div>
                 </div>
             </div>

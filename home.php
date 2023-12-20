@@ -74,46 +74,33 @@
         <div class="row">
             <div class="col-12">
                 <div class="recommended-wrapper">
-                    <h2 class="recommended-wrapper__title">Рекомендуем газовые котлы</h2>
+                    <h2 class="recommended-wrapper__title">РЕКОМЕНДУЕМЫЕ ТОВАРЫ</h2>
                     <div class="recommended-grid">
-                        <div class="product-item">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/product-img-1.png" alt="">
-                            <h3 class="product-item__title">Газовый котел Eolo Mythos 24 4 R</h3>
-                            <span class="product-item__price">330 000 тенге</span>
-                            <div class="product-box">
-                                <a href="#" class="product-box__add-cart">В корзину</a>
-                                <a href="#" class="product-box__more">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/product-img-2.png" alt="">
-                            <h3 class="product-item__title">Напольный газовый котел Immergas
-                                ARES 40 R</h3>
-                            <span class="product-item__price">644 300 тенге</span>
-                            <div class="product-box">
-                                <a href="#" class="product-box__add-cart">В корзину</a>
-                                <a href="#" class="product-box__more">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/product-img-3.png" alt="">
-                            <h3 class="product-item__title">Конденсационный котел VICTRIX
-                                TERA 24 PLUS</h3>
-                            <span class="product-item__price">579 000 тенге</span>
-                            <div class="product-box">
-                                <a href="#" class="product-box__add-cart">В корзину</a>
-                                <a href="#" class="product-box__more">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/product-img-4.png" alt="">
-                            <h3 class="product-item__title">Бак косвенного нагрева UBS 100</h3>
-                            <span class="product-item__price">315 000 тенге</span>
-                            <div class="product-box">
-                                <a href="#" class="product-box__add-cart">В корзину</a>
-                                <a href="#" class="product-box__more">Подробнее</a>
-                            </div>
-                        </div>
+                        <?php $args = array(
+                            'posts_per_page' => 8,
+                            'post_type' => 'product',
+                            'post__in' => array(212, 207, 206, 205, 199, 128, 105, 97),
+                            'orderby' => 'meta_value_num',
+                            'meta_key' => '_price',
+                            'order' => 'desc',
+                        );
+                        $query = new WP_Query($args);
+                        if ($query->have_posts()) {
+                            while ($query->have_posts()) {
+                                $query->the_post(); ?>
+                                <div class="product-item">
+                                    <?php the_post_thumbnail(); ?>
+                                    <h3 class="product-item__title"><?php the_title(); ?></h3>
+                                   <?php woocommerce_template_loop_price(); ?>
+                                    <div class="product-box">
+                                        <?php woocommerce_template_loop_add_to_cart(); ?>
+                                        <a href="<?php the_permalink(); ?>" class="product-box__more">Подробнее</a>
+                                    </div>
+                                </div>
+                            <?php }
+                            wp_reset_postdata();
+                        } else
+                            echo 'Записей нет.'; ?>
                     </div>
                 </div>
             </div>
@@ -133,8 +120,7 @@
                             <p class="cylinders-wrapper__text">Для производственных складов и
                                 бизнес-объектов</p>
                             <div class="cylinders-box">
-                                <a href="#" class="cylinders-more">Подробнее</a>
-                                <a href="" class="cylinders-add">Подобрать баллон</a>
+                                <a href="<?php bloginfo('url'); ?>/product-category/camping-goods/" class="cylinders-more">Подробнее</a>
                             </div>
                         </div>
                         <div class="cylinders-right">
@@ -167,7 +153,7 @@
                             является сжиженный углеводородный газ (СУГ). Обратившись в нашу компанию, вы получите
                             систему автономного газоснабжения и комплекс сопутствующих услуг «под ключ», включающий в
                             себя проектирование, поставку газового оборудования, монтаж и сервисное обслуживание.</p>
-                        <a href="#" class="cylinders-more">Подробнее</a>
+                        <a href="<?php bloginfo('url'); ?>/services/" class="cylinders-more">Подробнее</a>
                     </div>
                     <div class="supply-img">
                         <img src="<?php echo bloginfo('template_url'); ?>/assets/img/supply-bg.png" alt="" class="supply-img__img">
@@ -183,51 +169,30 @@
                 <div class="col-12">
                     <div class="news-wrapper">
                         <h2 class="news-wrapper__title">Новости и публикации</h2>
-                        <div class="news-grid">
-                            <a href="#" class="news-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/news-img-1.jpg" alt="">
-                                <h4 class="news-item__title">Преимущества автономной газификации</h4>
-                                <p>Давление паров пропан-бутановой смеси на вводе
-                                    в дом всегда постоянное и не происходят его пере-
-                                    пады, как это часто бывает при подключении к
-                                    централизованным газопроводам...</p>
-                                <time class="news-item__time">21.08.2023</time>
-                            </a>
-                            <a href="#" class="news-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/news-img-2.jpg" alt="">
-                                <h4 class="news-item__title">Арматура для емкости СУГ</h4>
-                                <p>Комплект арматуры для подземного резервуара;
-                                    Наполнительные клапаны; Клапаны многофунк-
-                                    циональные; Внешние предохранительные и
-                                    обратные клапаны...</p>
-                                <time class="news-item__time">20.08.2023</time>
-                            </a>
-                            <a href="#" class="news-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/news-img-3.jpg" alt="">
-                                <h4 class="news-item__title">Газификация промышленных объектов</h4>
-                                <p>Автономная газификация промышленных объектов
-                                    во многом отличается от автономной газификации
-                                    частных домов и участков, которую предлагают
-                                    многие компании.</p>
-                                <time class="news-item__time">19.08.2023</time>
-                            </a>
-                            <a href="#" class="news-item">
-                                <img src="<?php echo bloginfo('template_url'); ?>/assets/img/news-img-4.jpg" alt="">
-                                <h4 class="news-item__title">Газгольдеры наземные и подземные</h4>
-                                <p>По месту установки газгольдеры для частного дома
-                                    делятся на подземные и наземные.К преимуществам
-                                    подземных газгольдеров по сравнению с надзем-
-                                    ными можно отнести...</p>
-                                <time class="news-item__time">18.08.2023</time>
-                            </a>
+                        <div class="news-grid mb-2">
+                            <?php $args = array('posts_per_page' => 4, 'category_name' => 'news');
+                            $query = new WP_Query($args);
+                            if ($query->have_posts()) {
+                                while ($query->have_posts()) {
+                                    $query->the_post(); ?>
+                                    <a href="<?php the_permalink(); ?>" class="news-item">
+                                        <?php the_post_thumbnail(); ?>
+                                        <h4 class="news-item__title"><?php the_title(); ?></h4>
+                                        <?php the_excerpt(); ?>
+                                        <time class="news-item__time"><?php echo get_the_date('d.m.Y'); ?></time>
+                                    </a>
+
+                                <?php }
+                                wp_reset_postdata();
+                            } else
+                                echo 'Записей нет.'; ?>
                         </div>
+                        <a href="<?php echo bloginfo('url'); ?>/news/" class="cylinders-more m-auto">Все новости</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </main>
 <?php get_footer(); ?>
 

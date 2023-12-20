@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f78f8eba-d86b-428f-b77d-3cb66b6a5b53" name="Default Changelist" comment="start">
+      <change afterPath="$PROJECT_DIR$/category-liquefied-gas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-natural-gas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-news.php" beforeDir="false" afterPath="$PROJECT_DIR$/category-news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-usefull.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/header-home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2VFk9u31sOhUOD0mNdDmsXIhm2N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files (x86)\OSPanel\domains\Wordpress\wp-content\themes\gasline" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f78f8eba-d86b-428f-b77d-3cb66b6a5b53" name="Default Changelist" comment="" />
+      <created>1694439071533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694439071533</updated>
+      <workItem from="1694439073577" duration="1542000" />
+      <workItem from="1695099146779" duration="8405000" />
+      <workItem from="1695119082346" duration="13717000" />
+      <workItem from="1695182308444" duration="7677000" />
+      <workItem from="1695299298100" duration="2965000" />
+      <workItem from="1695375470872" duration="6816000" />
+      <workItem from="1695635136584" duration="3847000" />
+      <workItem from="1695705279402" duration="595000" />
+      <workItem from="1695889746816" duration="6199000" />
+      <workItem from="1695977588314" duration="11724000" />
+      <workItem from="1696150090077" duration="9552000" />
+      <workItem from="1696253408395" duration="35000" />
+      <workItem from="1696762803815" duration="6449000" />
+      <workItem from="1696838295280" duration="598000" />
+      <workItem from="1696850234178" duration="4228000" />
+      <workItem from="1697376556066" duration="3203000" />
+      <workItem from="1697958265570" duration="21000" />
+      <workItem from="1699256188765" duration="502000" />
+      <workItem from="1699270403961" duration="315000" />
+      <workItem from="1699509213152" duration="639000" />
+      <workItem from="1699853641554" duration="2924000" />
+      <workItem from="1700057846496" duration="1109000" />
+      <workItem from="1703067922633" duration="2827000" />
+    </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1695639432618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695639432618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/woocommerce/cart/cart.php</url>
+          <line>161</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
